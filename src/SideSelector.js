@@ -1,6 +1,11 @@
 const SideSelector = () => {
   return (
     <center>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <h3 className="radio-group">
         <label>
           <input type="radio" name='cube' value='1' />Side 1
