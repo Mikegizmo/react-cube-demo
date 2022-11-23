@@ -1,6 +1,8 @@
-import { Button } from 'reactstrap';
-
 const SideSelector = () => {
+  const sideChoice = (e) => {
+    console.log(e.target.value);
+  }
+
   return (
     <center>
       <br />
@@ -8,27 +10,26 @@ const SideSelector = () => {
       <br />
       <br />
       <br />
-      <h3 className="radio-group">
+      <h3 className="radio-group" onChange={sideChoice}>
         <label>
-          <input type="radio" name='cube' value='1' />Side 1
+          <input type="radio" name='cube' value='1' /> 1&nbsp;&nbsp;&nbsp;
         </label>
         <label>
-          <input type="radio" name='cube' value='2' />Side 2
+          <input type="radio" name='cube' value='2' /> 2&nbsp;&nbsp;&nbsp;
         </label>
         <label>
-          <input type="radio" name='cube' value='3' />Side 3
+          <input type="radio" name='cube' value='3' /> 3&nbsp;&nbsp;&nbsp;
         </label>
         <label>
-          <input type="radio" name='cube' value='4' />Side 4
+          <input type="radio" name='cube' value='4' /> 4&nbsp;&nbsp;&nbsp;
         </label>
         <label>
-          <input type="radio" name='cube' value='5' />Side 5
+          <input type="radio" name='cube' value='5' /> 5&nbsp;&nbsp;&nbsp;
         </label>
         <label>
-          <input type="radio" name='cube' value='6' />Side 6
+          <input type="radio" name='cube' value='6' /> 6
         </label>
       </h3>
-      <Button type='submit' color='secondary'>Submit Choice</Button>
     </center>
   )
 }
