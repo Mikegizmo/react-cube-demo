@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './Cube.css'
+import '../Cube/Cube.css'
 import Cube from 'react-3d-cube';
 import image1 from '../app/assets/eagle-nebula.jpg';
 import image2 from '../app/assets/earth.jpg';
@@ -22,22 +22,28 @@ class LogoCube extends React.Component {
         >
         <Cube size={300} index="front">
           <div style={{backgroundColor: 'black'}}>
-              1<img style={{width: '280px', height: '300px'}} src={image1} alt=''></img>
+              <img style={{width: '280px', height: '300px'}} src={image1} alt='' />
+              <h4 className='text-block'>1</h4>
           </div>
           <div style={{backgroundColor: 'black'}}>
-              2<img style={{width: '280px', height: '300px'}} src={image2} alt=''></img>
+              <img style={{width: '280px', height: '300px'}} src={image2} alt='' />
+              <h4 className='text-block'>2</h4>
           </div>
           <div style={{backgroundColor: 'black'}}>
-              3<img style={{width: '280px', height: '300px'}} src={image3} alt=''></img>
+              <img style={{width: '280px', height: '300px'}} src={image3} alt='' />
+              <h4 className='text-block'>3</h4>
           </div>
           <div style={{backgroundColor: 'black'}}>
-            4<img style={{width: '280px', height: '300px'}} src={image4} alt=''></img>
+            <img style={{width: '280px', height: '300px'}} src={image4} alt='' />
+            <h4 className='text-block'>4</h4>
           </div>
           <div style={{backgroundColor: 'black'}}>
-            5<img style={{width: '280px', height: '300px'}} src={image5} alt=''></img>
+            <img style={{width: '280px', height: '300px'}} src={image5} alt='' />
+            <h4 className='text-block'>5</h4>
           </div>
           <div style={{backgroundColor: 'black'}}>
-            6<img style={{width: '280px', height: '300px'}} src={image6} alt=''></img>
+            <img style={{width: '280px', height: '300px'}} src={image6} alt='' />
+            <h4 className='text-block'>6</h4>
           </div>
         </Cube>
         </div>

@@ -1,3 +1,5 @@
+import { Button } from 'reactstrap';
+
 const SideSelector = () => {
   return (
     <center>
@@ -26,6 +28,7 @@ const SideSelector = () => {
           <input type="radio" name='cube' value='6' />Side 6
         </label>
       </h3>
+      <Button type='submit' color='secondary'>Submit Choice</Button>
     </center>
   )
 }

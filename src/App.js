@@ -1,7 +1,7 @@
 import './App.css';
-import Header from "./Header";
-import LogoCube from './Cube/Cube.js'
-import SideSelector from "./SideSelector";
+import Header from "./components/Header";
+import LogoCube from './components/Cube.js'
+import SideSelector from "./components/SideSelector";
 
 
 function App() {
