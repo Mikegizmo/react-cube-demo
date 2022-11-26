@@ -2,7 +2,7 @@ import './App.css';
 import Header from "./components/Header";
 import LogoCube from './components/Cube.js'
 import SideSelector from "./components/SideSelector";
-
+// import Images from "./components/Images";
 
 function App() {
   return (
