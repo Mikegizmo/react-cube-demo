@@ -1,11 +1,17 @@
+import { useState } from 'react';
+
 const SideSelector = () => {
-  const sideChoice = (e) => {
-    console.log(e.target.value);
-  }
+  const [ choice, setChoice ] = useState('');
+  const [ isTextShown, setTextShown ] = useState(true);
+  const sideChoice = (event) => {
+    event.preventDefault();
+    console.log('You have selected side: ' + event.target.value);
+    setChoice(event.target.value);
+    setTextShown(false);
+  };
 
   return (
     <center>
-      <br />
       <br />
       <br />
       <br />
@@ -30,6 +36,9 @@ const SideSelector = () => {
           <input type="radio" name='cube' value='6' /> 6
         </label>
       </h3>
+      <div>
+        {!isTextShown ? <h4>You have selected side {choice}, is this correct?</h4> : null}
+      </div>
     </center>
   )
 }

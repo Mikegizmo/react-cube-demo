@@ -6,8 +6,6 @@ const Header = () => {
     <br />
     <br />
     <br />
-    <br />
-    <br />
   </center>  
   );
 }

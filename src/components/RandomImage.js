@@ -19,16 +19,5 @@ const RandomImage = () => {
     </div>
   )
 }
-
-// const RandomImage = () => {
-//   const random = Math.floor(Math.random() * stars.length);
-//   const star = stars[random];
-//   console.log(random);
-//   return (
-//     <div>
-//       <img src={star.url} />
-//     </div>
-//   )
-// }
       
 export default RandomImage
