@@ -8,7 +8,17 @@ import { vegetables } from '../app/assets/vegetables/vegetables';
 
 const arrayObjects = [ dogs, cats, fruits, stars, vegetables ];
 const array = Math.floor(Math.random() * arrayObjects.length);
-const arrayImg = arrayObjects[array];
+let arrayImg = arrayObjects[array];
+
+const newArrayObjects = arrayObjects.filter((item) => {
+  return item !== arrayImg
+});
+const array2 = Math.floor(Math.random() * newArrayObjects.length);
+const arrayItem = Math.floor(Math.random() * 6);
+const arrayRandomImg = newArrayObjects[array2[arrayItem]];
+if (arrayItem === arrayImg.indexOf(arrayItem)) {
+  arrayImg[arrayItem] = arrayRandomImg;
+}
 
  const LogoCube =() => {
     return (
