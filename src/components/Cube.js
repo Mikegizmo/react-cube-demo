@@ -5,8 +5,10 @@ import { stars } from '../app/assets/stars/stars';
 import { cats } from '../app/assets/cats/cats';
 import { fruits } from '../app/assets/fruits/fruits';
 import { vegetables } from '../app/assets/vegetables/vegetables';
+import { birds } from '../app/assets/birds/birds';
+import { reptiles } from '../app/assets/reptiles/reptiles';
 
-const arrayObjects = [ dogs, cats, fruits, stars, vegetables ];
+const arrayObjects = [ dogs, cats, fruits, stars, vegetables, birds, reptiles ];
 const array = Math.floor(Math.random() * arrayObjects.length);
 let arrayImg = arrayObjects[array];
 
@@ -14,11 +16,14 @@ const newArrayObjects = arrayObjects.filter((item) => {
   return item !== arrayImg
 });
 const array2 = Math.floor(Math.random() * newArrayObjects.length);
+console.log(array2);
 const arrayItem = Math.floor(Math.random() * 6);
-const arrayRandomImg = newArrayObjects[array2[arrayItem]];
-if (arrayItem === arrayImg.indexOf(arrayItem)) {
-  arrayImg[arrayItem] = arrayRandomImg;
-}
+const newArray = newArrayObjects[array2];
+console.log(newArray);
+const randomItem = newArray[arrayItem];
+console.log(randomItem);
+arrayImg.splice(arrayItem, 1, randomItem);
+console.log(arrayImg);
 
  const LogoCube =() => {
     return (

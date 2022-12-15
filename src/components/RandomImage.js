@@ -3,8 +3,10 @@ import { stars } from '../app/assets/stars/stars';
 import { cats } from '../app/assets/cats/cats';
 import { fruits } from '../app/assets/fruits/fruits';
 import { vegetables } from '../app/assets/vegetables/vegetables';
+import { birds } from '../app/assets/birds/birds';
+import { reptiles } from '../app/assets/reptiles/reptiles';
 
-const arrayObjects = [ dogs, cats, fruits, stars, vegetables ];
+const arrayObjects = [  birds, reptiles ];
 const array = Math.floor(Math.random() * arrayObjects.length);
 console.log(arrayObjects[array]);
 
