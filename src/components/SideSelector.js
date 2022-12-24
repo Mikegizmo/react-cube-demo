@@ -5,6 +5,7 @@ const SideSelector = () => {
   const [ isTextShown, setTextShown ] = useState(true);
   const [ show, toggleShow ] = useState(true);
   const [ bgColor, setBgColor ] = useState('dodgerblue');
+  
   const sideChoice = (event) => {
     event.preventDefault();
     console.log('You have selected side: ' + event.target.value);
@@ -21,6 +22,10 @@ const SideSelector = () => {
     document.body.style.backgroundColor = bgColor;
   }, [bgColor])
 
+  const checkChoice = () => {
+      bgColorChange('forestgreen');
+  }; 
+  
   return (
     <center>
       <br />
@@ -53,7 +58,7 @@ const SideSelector = () => {
           If not, please choose another side.</h4>
           : null}
       </div>
-      {!show ? <button onClick={() => bgColorChange('forestgreen')}>Confirm Choice</button> : null}
+      {!show ? <button onClick={checkChoice}>Confirm Choice</button> : null}
     </center>
   )
 }

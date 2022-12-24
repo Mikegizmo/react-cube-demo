@@ -7,8 +7,9 @@ import { fruits } from '../app/assets/fruits/fruits';
 import { vegetables } from '../app/assets/vegetables/vegetables';
 import { birds } from '../app/assets/birds/birds';
 import { reptiles } from '../app/assets/reptiles/reptiles';
+import { waterfalls } from '../app/assets/waterfalls/waterfalls';
 
-const arrayObjects = [ dogs, cats, fruits, stars, vegetables, birds, reptiles ];
+const arrayObjects = [ dogs, cats, fruits, stars, vegetables, birds, reptiles, waterfalls ];
 const array = Math.floor(Math.random() * arrayObjects.length);
 let arrayImg = arrayObjects[array];
 
@@ -25,7 +26,7 @@ console.log(randomItem);
 arrayImg.splice(arrayItem, 1, randomItem);
 console.log(arrayImg);
 
- const LogoCube =() => {
+ const ImageCube = () => {
     return (
     <center>
       <div>
@@ -67,7 +68,4 @@ console.log(arrayImg);
     );
 }
 
-
-
-
-export default LogoCube
+export default ImageCube;
