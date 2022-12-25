@@ -63,7 +63,7 @@ console.log(arrayImg);
             <h4 className='text-block'>6</h4>
           </div>
         </Cube>
-        <SideSelector randomImg={arrayItem}/>
+        <SideSelector />
         </div>
       </div>
     </center>
