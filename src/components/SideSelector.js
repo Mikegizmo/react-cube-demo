@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { randomItem } from './ImageCube';
 
 const SideSelector = () => {
   const [ choice, setChoice ] = useState('');
@@ -23,7 +24,11 @@ const SideSelector = () => {
   }, [bgColor])
 
   const checkChoice = () => {
+    if (Number(choice) === randomItem.id+1) {
       bgColorChange('forestgreen');
+    } else {
+      bgColorChange('red');
+    }
   }; 
   
   return (

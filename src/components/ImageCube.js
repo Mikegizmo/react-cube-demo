@@ -1,5 +1,6 @@
 import '../Cube/Cube.css'
 import Cube from 'react-3d-cube';
+import SideSelector from "./SideSelector";
 import { dogs } from '../app/assets/dogs/dogs';
 import { stars } from '../app/assets/stars/stars';
 import { cats } from '../app/assets/cats/cats';
@@ -62,10 +63,12 @@ console.log(arrayImg);
             <h4 className='text-block'>6</h4>
           </div>
         </Cube>
+        <SideSelector randomImg={arrayItem}/>
         </div>
       </div>
     </center>
     );
 }
 
+export { randomItem };
 export default ImageCube;
